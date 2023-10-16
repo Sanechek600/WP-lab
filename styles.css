@@ -1,0 +1,48 @@
+body {
+    position: relative;
+    background-image: url("img/background.jpg");
+}
+
+header{
+    display: flex;
+    position: relative;
+    height: 50px;
+}
+
+.main-nav {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav a{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-content: space-around;
+    background-color: rgba(100, 100, 100, 0.5);
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+}
+
+.main-nav a:hover{
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 70%;
+    left: 15%;
+    position: absolute;
+}
+
+.text-long {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
